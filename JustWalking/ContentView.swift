@@ -6,8 +6,16 @@
 //
 
 import SwiftUI
+import CoreMotion
 
 struct ContentView: View {
+    
+    // MARK: - PROPERTIES
+    
+    private let pedometer: CMPedometer = CMPedometer()
+    
+    // MARK: - BODY
+    
     var body: some View {
         Text("Hello, world!")
             .padding()
