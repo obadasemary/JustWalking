@@ -14,11 +14,18 @@ struct ContentView: View {
     
     private let pedometer: CMPedometer = CMPedometer()
     
+    private func initPedometer() {
+        
+    }
+    
     // MARK: - BODY
     
     var body: some View {
         Text("Hello, world!")
             .padding()
+            .onAppear {
+                initPedometer()
+            }
     }
 }
 
